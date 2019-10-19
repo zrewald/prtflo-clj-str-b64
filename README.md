@@ -16,7 +16,8 @@ There is no provided jar for this project.  In order to run it, it will need to 
 
 1.  Check out the project using whatever Git tool.
 2.  `lein repl` within the project's folder
-3.  Assuming you're in the `prtflo-clj-str-b64` namespace, you should be able to use the `encode` and `decode` functions.
+3.  Move into the `prtflo-clj-str-b64.core` namespace
+4.  You should now be able to use the `encode` and `decode` functions.
 
 ## Usage
 
