@@ -1,44 +1,39 @@
 # prtflo-clj-str-b64
 
-FIXME: description
+## Warning!
+
+This library is not meant to be used in actual projects.  If you're looking for a Base64 encoder/decoder library, you'll need to look elsewhere.
+
+## About
+
+This is a simple portfolio project implementing (what I considered to be) an interesting algorithm.  Thanks for checking it out!
+
+This library can currently encode only ASCII text, and makes no attempt at correctly handling unicode.  
 
 ## Installation
 
-Download from http://example.com/FIXME.
+There is no provided jar for this project.  In order to run it, it will need to be cloned and worked with via REPL.
+
+1.  Check out the project using whatever Git tool.
+2.  `lein repl` within the project's folder
+3.  Assuming you're in the `prtflo-clj-str-b64` namespace, you should be able to use the `encode` and `decode` functions.
 
 ## Usage
 
-FIXME: explanation
+### Encoding
 
-    $ java -jar prtflo-clj-str-b64-0.1.0-standalone.jar [args]
+Limitations
+- Input must be an ASCII-only string
 
-## Options
+```
+(encode "Your input here")
+```
 
-FIXME: listing of options this app accepts.
+### Decoding
 
-## Examples
+Limitations
+- Input must be a Base64-encoded string
 
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2019 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+```
+(decode "WW91ciBpbnB1dCBoZXJl")
+```
